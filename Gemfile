@@ -16,6 +16,9 @@ gem 'coffee-rails', '~> 4.1.0'
 ruby '2.2.0'
 gem 'rails_12factor', group: :production
 gem 'puma',           group: :production
+gem 'bootstrap-sass', '~> 3.3.1'
+gem 'font-awesome-sass', '~> 4.2.0'
+gem 'bootstrap_form'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

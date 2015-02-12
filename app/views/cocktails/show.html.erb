@@ -1,9 +1,9 @@
 <h1><%= @cocktail.name %></h1>
 
-<%= link_to "want more?", cocktails_path, class: "btn btn-success" %>
+<%= link_to "all cocktails", cocktails_path, class: "btn btn-success" %>
 
 <h2>Recipe</h2>
-<%= link_to "add ingredients", new_cocktail_dose_path %>
+<%= link_to "add ingredients", new_cocktail_dose_path(@cocktail) %>
 
 <ul class="list-unstyled">
   <% @cocktail.doses.each do |dose| %>

@@ -1,18 +1,40 @@
-<h1>What's your cocktail, dude?</h1>
-
-
-<%= form_for @cocktail do |f| %>
-  <% if @cocktail.errors.any? %>
-    <div id="error_explanation">
-      <ul>
-        <% @cocktail.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-        <% end %>
-      </ul>
+<div class="row">
+  <div class="col-md-4">
+    <div id="banner">
+      <h1>What's your cocktail, dude?</h1>
     </div>
-  <% end %>
+  </div>
+  <div class="col-md-8">
+    <div class="padded">
 
-  <%= f.text_field :name %><br />
-  <%= f.submit %>
-<% end %>
+    </div>
+  </div>
+  <div class="col-md-8">
+    <div class="bg-white">
+      <div class="card text-center">
+        <%= form_for @cocktail do |f| %>
+          <% if @cocktail.errors.any? %>
+            <div id="error_explanation">
+              <ul>
+                <% @cocktail.errors.full_messages.each do |message| %>
+                <li><%= message %></li>
+                <% end %>
+              </ul>
+            </div>
+          <% end %>
+
+        <h1>Cocktail's name</h1>
+        <div class="form-group">
+          <%= f.text_field :name, class: "form-control" %>
+        </div>
+
+        <%= f.submit 'Add It', :class => 'btn btn-warning' %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
 
