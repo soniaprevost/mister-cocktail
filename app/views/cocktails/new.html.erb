@@ -1,0 +1,18 @@
+<h1>What's your cocktail, dude?</h1>
+
+
+<%= form_for @cocktail do |f| %>
+  <% if @cocktail.errors.any? %>
+    <div id="error_explanation">
+      <ul>
+        <% @cocktail.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <%= f.text_field :name %><br />
+  <%= f.submit %>
+<% end %>
+

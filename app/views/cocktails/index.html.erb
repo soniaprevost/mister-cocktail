@@ -1,0 +1,9 @@
+<h1>In da cocktails</h1>
+
+<% @cocktails.each do |cocktail| %>
+  <ol>
+    <li><%= link_to cocktail.name, cocktail_path(cocktail) %></li>
+  </ol>
+<% end %>
+
+<%= link_to "add a cocktail", new_cocktail_path, class: 'btn btn-primary' %>
