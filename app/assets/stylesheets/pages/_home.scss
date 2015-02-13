@@ -5,9 +5,14 @@
 
 #banner {
   background: image-url('cocktail.jpg');
+  position: fixed;
+  overflow-y: auto;
+  z-index: 1000;
+  top: 0;
   color: white;
   background-size: cover;
   height: 760px;
+  width: 30%;
   padding-left: 3%;
   margin-top: -22.5px;
   h1 {
