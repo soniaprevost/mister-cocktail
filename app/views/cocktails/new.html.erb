@@ -12,7 +12,7 @@
   <div class="col-md-8">
     <div class="bg-white">
       <div class="card text-center">
-        <%= form_for @cocktail do |f| %>
+        <%= form_for(@cocktail, html: { multipart: true }) do |f| %>
           <% if @cocktail.errors.any? %>
             <div id="error_explanation">
               <ul>
@@ -27,8 +27,10 @@
         <div class="form-group">
           <%= f.text_field :name, class: "form-control" %>
         </div>
-
-        <%= f.submit 'Add It', :class => 'btn btn-warning' %>
+        <div class="form-group">
+          <%= f.file_field :picture %>
+        </div>
+          <%= f.submit 'Add It', :class => 'btn btn-warning' %>
         <% end %>
       </div>
     </div>
