@@ -1,27 +1,47 @@
 .card {
-  background-color: #ECF0F1;
-  padding: 40px;
   margin: 10px;
-  height: 240px;
+  padding: 10px;
 }
 
 #banner {
   background: image-url('cocktail.jpg');
   color: white;
-  padding: 250px 0;
   background-size: cover;
-  // height: 650px;
+  height: 760px;
   padding-left: 3%;
+  margin-top: -22.5px;
   h1 {
-  font-size: 70px;
+    padding-top: 250px;
+    font-size: 70px;
   }
   p {
-  font-size: 25px;
-  font-weight: 100;
-  padding-left: 1.5%;
+    font-size: 25px;
+    font-weight: 100;
+    padding-left: 10%;
   }
 }
 
-.padded {
-  height: 200px;
+// .padded {
+//   height: 150px;
+// }
+
+.over-pic {
+  color: white;
+  margin-top: -200px;
+  // text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+.img-box {
+  width: 380px;
+  height: 380px;
+  overflow: hidden;
+}
+
+.total-width {
+  width: 100%;
+}
+
+.total-height {
+  height: 100%;
 }

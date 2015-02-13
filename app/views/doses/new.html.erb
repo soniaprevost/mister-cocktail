@@ -1,4 +1,4 @@
-<h1>Add the dose, dude?</h1>
+<h1>Add the dose, dude!</h1>
 
 
 <%= form_for [@cocktail, @dose] do |f| %>
@@ -12,7 +12,7 @@
     </div>
   <% end %>
 
-  Description <%= f.text_field :description %>
+  Quantity <%= f.text_field :description %>
   <%= f.select :ingredient_id, @ingredients.map { |ingredient| [ingredient.name, ingredient.id] } %>
   <%= f.submit %>
 <% end %>
